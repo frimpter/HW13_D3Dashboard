@@ -1,0 +1,64 @@
+<!--Frimpter HW13 D3 Dashboard-->
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head class="head">
+        <!--Meta Tags-->
+        <meta charset="UTF 8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Title-->
+        <title>B3 Dashboard</title>
+        <!--Linked Resources-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+            crossorigin="anonymous">
+        <!--CSS Placeholder-->
+        <!--PLOTLY-->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+
+    <body>
+        <br>
+        <div class="container">
+            
+            <!--TOP HEADER ROW-->
+            <div class="row bg-light">
+                <div class="col-md-12 border rounded text-center">
+                    <h1 class="display-4">B3 Dashboard</h1>
+                    <p class="lead">Belly Button Biodiversity (B3) Analytics</p>
+                </div>
+            </div>
+            <br>
+            <!--ROW 1-->
+            <div class="row">
+                <div class="col-md-4 border rounded">
+                    <p class="lead">Select a sample to analyze
+                    <br>
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    <br><br>
+                    Sample MetaData:
+                    <div id="sample_metadata"></div>
+                    </p>
+                </div>
+                <div class="col-md-4">Pie Chart</div>
+                <div class="col-md-4">Scrubs Per Week</div>
+            </div>
+
+            <!--ROW 2-->
+            <div class="row">
+                <div class="col-md-12">bubble chart</div>
+            </div>
+
+        </div>
+
+
+    <!--Data Files-->
+    <script src="/templates/B3_ParticipantData.csv"></script>
+    <script src="/templates/B3_OTUData.csv"></script>
+    <!--JavaScript File-->
+    <script></script>
+
+    </body>
+
+</html>
+
